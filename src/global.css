@@ -1,0 +1,78 @@
+:root {
+    --primary-100: #ffe4e9;
+    --primary-200: #fecdd8;
+    --primary-300: #fea3b7;
+    --primary-400: #fc7092;
+    --primary-500: #f63d6f;
+    --primary-600: #e21b5a;
+    --primary-700: #c0104c;
+    --primary-800: #a01146;
+    --primary-900: #891243;
+}
+
+html, body, #svelte {
+    padding: 0; 
+    margin: 0;
+
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: Poppins, -apple-system, BlinkMacSystemFont,  Roboto, "Segoe UI",  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--primary-600);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button.large {
+    padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+button:hover {
+    background-color: var(--primary-700);
+}
+
+button.light {
+    background-color: var(--primary-100);
+    color: var(--primary-900);
+}
+
+button.light:hover {
+    background-color: var(--primary-200);
+}
+
+button.outline {
+    background-color: transparent;
+    border: 2px solid var(--primary-600);
+    color: var(--primary-700);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+button.outline:hover {
+    color: var(--primary-800);
+    background-color: transparent;
+}
+
+button.text {
+    background-color: transparent;
+    transition: color 0.2s ease-in-out;
+    color: var(--primary-800);
+}
+
+button.text:hover {
+    color: var(--primary-900);
+}
